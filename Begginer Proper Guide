@@ -1,0 +1,65 @@
+Step 4: Identify Network Interface
+"ifconfig"
+
+
+Example interface: enp0s3
+
+Step 5: Configure Snort
+
+Test Snort configuration:
+
+"" sudo snort -T -c /etc/snort/snort.conf -i enp0s3  ""
+
+
+Run Snort in IDS mode:
+""
+sudo snort -A console -q -u snort -g snort -c /etc/snort/snort.conf -i enp0s3
+""
+🔍 Attack Simulation & Testing
+Port Scanning Attack (Nmap)
+""
+nmap -sV <Server_IP>
+""
+DoS Attack (Slowloris)
+""
+slowloris <Server_IP>
+""
+
+Snort will generate alerts upon detecting these attacks.
+
+📊 Monitoring & Analysis
+
+Monitor alerts directly in Snort console
+
+Review logs in /var/log/snort/
+
+Analyze traffic using Wireshark (optional)
+
+🔔 Alert Management
+
+Console-based alerts
+
+Log-based reporting for forensic analysis
+
+🔄 Maintenance
+
+Update Snort rules regularly
+
+Monitor system performance
+
+Review logs for false positives
+
+📚 Learning Outcomes
+
+Hands-on IDS deployment
+
+Network attack detection
+
+Practical cybersecurity experience
+
+Understanding real-world network threats
+
+👤 Author
+
+Adnan Khalid
+Cyber Security Intern
