@@ -1,0 +1,24 @@
+
+---
+
+## 🚀 Installation & Setup Guide
+
+### Step 1: Install VirtualBox
+Follow the official Kali Linux documentation:
+https://www.kali.org/docs/virtualization/install-virtualbox-host/
+
+---
+
+### Step 2: Install Ubuntu Server
+Download Ubuntu Server ISO:
+https://ubuntu.com/download/server
+
+Create a new Virtual Machine in VirtualBox and complete the installation.
+
+---
+
+### Step 3: Install Required Services on Ubuntu Server
+
+```bash
+sudo apt update
+sudo apt install openssh-server apache2 snort -y
